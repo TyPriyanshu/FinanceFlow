@@ -42,41 +42,6 @@ It provides secure JWT authentication, role-based access control, financial reco
 
 ---
 
-# 📂 Project Structure
-
-```
-FinanceFlow
-│
-├── frontend/
-│
-├── backend/
-│
-├── server.ts
-├── package.json
-├── tsconfig.json
-├── .env.example
-└── README.md
-```
-
----
-
-# ⚙ Environment Variables
-
-Create a `.env` file in the project root.
-
-```env
-PORT=3000
-
-NODE_ENV=development
-
-MONGODB_URI=your_mongodb_atlas_connection_string
-
-JWT_SECRET=your_secret_key
-
-FRONTEND_URL=http://localhost:3000
-```
-
----
 
 # 📦 Installation
 
@@ -130,70 +95,6 @@ npm start
 
 ---
 
-# 🗄 MongoDB Atlas Setup
-
-1. Create a MongoDB Atlas Cluster
-2. Create a Database User
-3. Allow Network Access (0.0.0.0/0)
-4. Copy Connection String
-5. Add it to `.env`
-
-Example
-
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/financeflow?retryWrites=true&w=majority
-```
-
----
-
-# ☁ Deployment
-
-## Render
-
-Build Command
-
-```bash
-npm install && npm run build
-```
-
-Start Command
-
-```bash
-npm start
-```
-
-Environment Variables
-
-```
-NODE_ENV=production
-
-PORT=3000
-
-MONGODB_URI=your_atlas_connection_string
-
-JWT_SECRET=your_secret
-
-FRONTEND_URL=https://your-app.onrender.com
-```
-
----
-
-## Vercel
-
-If you separate the frontend and backend:
-
-Frontend → Vercel
-
-Backend → Render
-
-Frontend Environment Variable
-
-```
-VITE_API_URL=https://your-render-backend.onrender.com/api
-```
-
----
-
 # 🔐 Default Seeded Users
 
 Admin
@@ -224,6 +125,5 @@ viewer123
 
 ---
 
-# 📄 License
-
-MIT License
+# Live Link Of Website 
+https://financeflow-j17j.onrender.com
